@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - Nama Perusahaan</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white py-4 shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="text-xl md:text-2xl font-bold">Snack Fusion</div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-blue-200">Tentang Kami</a>
+                <a href="#products" class="hover:text-blue-200">Produk</a>
+                <a href="#team" class="hover:text-blue-200">Tim</a>
+                <a href="#contact" class="hover:text-blue-200">Kontak</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-blue-600 text-white py-2" id="mobile-menu">
+            <a href="#about" class="block px-4 py-2 hover:bg-blue-700">Tentang Kami</a>
+            <a href="#products" class="block px-4 py-2 hover:bg-blue-700">Produk</a>
+            <a href="#team" class="block px-4 py-2 hover:bg-blue-700">Tim</a>
+            <a href="#contact" class="block px-4 py-2 hover:bg-blue-700">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-black text-white py-24 md:py-32 relative h-screen w-full overflowed flex items-center justify-center">
+        <!-- Gambar Latar Belakang -->
+        <img src="img/produk.jpg" alt="Library Background" class="absolute inset-0 w-full h-full object-cover opacity-20">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4" data-aos="fade-down">Selamat Datang di Snack Fussion</h1>
+            <p class="text-lg md:text-xl mb-8" data-aos="fade-up" data-aos-delay="200">Solusi cemilan terbaik untuk setiap momen Anda, dari camilan sehat hingga pilihan lezat. Temukan varian rasa dan tekstur yang cocok untuk santai, bekerja, atau berkumpul bersama orang tersayang. Nikmati setiap gigitannya!</p>            <a href="#collections" class="bg-white text-blue-600 px-6 py-2 md:px-8 md:py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300" data-aos="fade-up" data-aos-delay="400">Jelajahi Koleksi</a>
+        </div>
+      </section>
+
+    <!-- Tentang Perusahaan Section -->
+    <section id="about" class="bg-white py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8" data-aos="fade-down">Tentang Kami</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Logo -->
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <img src="img/logo.jpg" alt="Tentang Kami" class="rounded-lg shadow-lg w-full max-w-md mx-auto">
+                </div>
+                <!-- Teks -->
+                <div class="md:w-1/2 mt-4 md:mt-0 md:ml-4" data-aos="fade-left" data-aos-delay="200"> <!-- Ubah margin di sini -->
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-800">Siapa Kami?</h3>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Kami adalah perusahaan yang berfokus pada penyediaan solusi inovatif untuk bisnis Anda. Dengan pengalaman lebih dari 10 tahun, kami telah membantu ratusan klien mencapai tujuan mereka.
+                    </p>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Tim kami terdiri dari para profesional yang ahli di bidangnya, siap memberikan layanan terbaik untuk Anda.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistik Section -->
+    <section class="bg-gray-100 py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+                    <h3 class="text-3xl md:text-4xl font-bold text-blue-600">10+</h3>
+                    <p class="text-gray-600">Tahun Pengalaman</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-3xl md:text-4xl font-bold text-blue-600">500+</h3>
+                    <p class="text-gray-600">Klien Puas</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-3xl md:text-4xl font-bold text-blue-600">99%</h3>
+                    <p class="text-gray-600">Kepuasan Pelanggan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="products" class="bg-white py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8" data-aos="fade-down">Produk Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <!-- Produk 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition duration-300" data-aos="fade-up">
+                    <img src="https://via.placeholder.com/150" alt="Produk 1" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">Produk 1</h3>
+                    <p class="mt-2 text-gray-600">Deskripsi singkat tentang Produk 1. Solusi terbaik untuk kebutuhan Anda.</p>
+                </div>
+                <!-- Produk 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/150" alt="Produk 2" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">Produk 2</h3>
+                    <p class="mt-2 text-gray-600">Deskripsi singkat tentang Produk 2. Solusi terbaik untuk kebutuhan Anda.</p>
+                </div>
+                <!-- Produk 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://via.placeholder.com/150" alt="Produk 3" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">Produk 3</h3>
+                    <p class="mt-2 text-gray-600">Deskripsi singkat tentang Produk 3. Solusi terbaik untuk kebutuhan Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tim Section -->
+    <section id="team" class="bg-gray-100 py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8" data-aos="fade-down">Tim Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <!-- Anggota Tim 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition duration-300" data-aos="fade-up">
+                    <img src="https://via.placeholder.com/150" alt="Tim 1" class="mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-bold text-gray-800">John Doe</h3>
+                    <p class="text-gray-600">CEO</p>
+                </div>
+                <!-- Anggota Tim 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/150" alt="Tim 2" class="mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-bold text-gray-800">Jane Doe</h3>
+                    <p class="text-gray-600">CTO</p>
+                </div>
+                <!-- Anggota Tim 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://via.placeholder.com/150" alt="Tim 3" class="mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-bold text-gray-800">Mike Smith</h3>
+                    <p class="text-gray-600">Marketing Head</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="bg-white py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8" data-aos="fade-down">Apa Kata Klien Kami?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-100 p-6 rounded-lg" data-aos="fade-up">
+                    <p class="text-gray-600">"Pelayanan yang sangat memuaskan! Produknya berkualitas tinggi dan timnya sangat profesional."</p>
+                    <p class="mt-4 font-semibold text-gray-800">- Klien A</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-100 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-gray-600">"Sangat direkomendasikan! Mereka memberikan solusi yang tepat untuk bisnis kami."</p>
+                    <p class="mt-4 font-semibold text-gray-800">- Klien B</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="contact" class="bg-gray-100 py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8" data-aos="fade-down">Hubungi Kami</h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="bg-white p-6 md:p-8 rounded-lg shadow-lg">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700">Nama</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700">Pesan</label>
+                        <textarea id="message" rows="5" class="w-full px-4 py-2 mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
+                <!-- Tentang Perusahaan -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tentang Kami</h3>
+                    <p class="text-gray-400">Kami adalah perusahaan yang berdedikasi untuk memberikan solusi terbaik bagi bisnis Anda.</p>
+                </div>
+                <!-- Link Cepat -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Link Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white">Tentang Kami</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white">Produk</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-white">Tim</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Kontak</a></li>
+                    </ul>
+                </div>
+                <!-- Kontak -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontak</h3>
+                    <ul class="text-gray-400">
+                        <li>Email: info@perusahaan.com</li>
+                        <li>Telepon: +62 123 4567 890</li>
+                        <li>Alamat: Jl. Contoh No. 123, Kota, Indonesia</li>
+                    </ul>
+                </div>
+                <!-- Sosial Media -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sosial Media</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                &copy; 2023 Nama Perusahaan. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
