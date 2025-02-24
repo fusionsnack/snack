@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Profile - Nama Perusahaan</title>
+    <title>Snack Fusion - Camilan Lezat</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- AOS (Animate On Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
 
@@ -38,14 +43,17 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-black text-white py-24 md:py-32 relative h-screen w-full overflowed flex items-center justify-center">
+    <section class="bg-black text-white py-24 md:py-32 relative h-screen w-full flex items-center justify-center">
         <!-- Gambar Latar Belakang -->
-        <img src="img/produk.jpg" alt="Library Background" class="absolute inset-0 w-full h-full object-cover opacity-20">
+        <img src="img/produk.jpg" alt="Camilan Lezat" class="absolute inset-0 w-full h-full object-cover opacity-20">
         <div class="container mx-auto px-4 text-center relative z-10">
-            <h1 class="text-3xl md:text-5xl font-bold mb-4" data-aos="fade-down">Selamat Datang di Snack Fussion</h1>
-            <p class="text-lg md:text-xl mb-8" data-aos="fade-up" data-aos-delay="200">Solusi cemilan terbaik untuk setiap momen Anda, dari camilan sehat hingga pilihan lezat. Temukan varian rasa dan tekstur yang cocok untuk santai, bekerja, atau berkumpul bersama orang tersayang. Nikmati setiap gigitannya!</p>            <a href="#collections" class="bg-white text-blue-600 px-6 py-2 md:px-8 md:py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300" data-aos="fade-up" data-aos-delay="400">Jelajahi Koleksi</a>
+            <h1 class="text-3xl md:text-5xl font-bold mb-4" data-aos="fade-down">Selamat Datang di Snack Fusion</h1>
+            <p class="text-lg md:text-xl mb-8" data-aos="fade-up" data-aos-delay="200">
+                Nikmati camilan lezat berkualitas tinggi yang siap menemani setiap momen spesial Anda.
+            </p>
+            <a href="#products" class="bg-white text-blue-600 px-6 py-2 md:px-8 md:py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300" data-aos="fade-up" data-aos-delay="400">Jelajahi Camilan Kami</a>
         </div>
-      </section>
+    </section>
 
     <!-- Tentang Perusahaan Section -->
     <section id="about" class="bg-white py-12 md:py-16">
@@ -57,19 +65,18 @@
                     <img src="img/logo.jpg" alt="Tentang Kami" class="rounded-lg shadow-lg w-full max-w-md mx-auto">
                 </div>
                 <!-- Teks -->
-                <div class="md:w-1/2 mt-4 md:mt-0 md:ml-4" data-aos="fade-left" data-aos-delay="200"> <!-- Ubah margin di sini -->
+                <div class="md:w-1/2 mt-4 md:mt-0 md:ml-4" data-aos="fade-left" data-aos-delay="200">
                     <h3 class="text-xl md:text-2xl font-bold text-gray-800">Siapa Kami?</h3>
                     <p class="mt-4 text-gray-600 leading-relaxed">
-                        Kami adalah perusahaan yang berfokus pada penyediaan solusi inovatif untuk bisnis Anda. Dengan pengalaman lebih dari 10 tahun, kami telah membantu ratusan klien mencapai tujuan mereka.
+                        Kami adalah Snack Fusion, perusahaan camilan yang berkomitmen untuk menyajikan camilan lezat dan berkualitas tinggi. Dengan bahan pilihan dan proses produksi yang higienis, kami memastikan setiap gigitan memberikan pengalaman tak terlupakan.
                     </p>
                     <p class="mt-4 text-gray-600 leading-relaxed">
-                        Tim kami terdiri dari para profesional yang ahli di bidangnya, siap memberikan layanan terbaik untuk Anda.
+                        Camilan kami dibuat dengan resep spesial yang dirancang untuk memanjakan lidah Anda. Dari bahan berkualitas hingga proses produksi yang teliti, kami hadir untuk memenuhi kebutuhan camilan Anda.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- Produk Section -->
     <section id="products" class="bg-white py-12 md:py-16">
@@ -92,7 +99,7 @@
                         <img src="img/basreng.jpg" alt="Baso Goreng" 
                              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800">Baso Goreng</h3>
+                    <h3 class="text-xl font-bold text-gray-800">Bakso Goreng</h3>
                     <p class="mt-2 text-gray-600">Baso goreng kenyal dengan tekstur krispi di luar, lembut di dalam.</p>
                 </div>
     
@@ -148,34 +155,20 @@
     <section id="contact" class="bg-gray-100 py-12 md:py-16">
         <div class="container mx-auto px-4">
             <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8" data-aos="fade-down">Hubungi Kami</h2>
-            <div class="max-w-2xl mx-auto">
-                <form class="bg-white p-6 md:p-8 rounded-lg shadow-lg">
-                    <div class="mb-4">
-                        <label for="name" class="block text-gray-700">Nama</label>
-                        <input type="text" id="name" class="w-full px-4 py-2 mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
-                    </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-gray-700">Email</label>
-                        <input type="email" id="email" class="w-full px-4 py-2 mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
-                    </div>
-                    <div class="mb-4">
-                        <label for="message" class="block text-gray-700">Pesan</label>
-                        <textarea id="message" rows="5" class="w-full px-4 py-2 mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
-                    </div>
-                    <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Kirim Pesan</button>
-                </form>
+            <div class="text-center">
+                <a href="https://wa.me/6289517526429" class="bg-green-600 text-white px-6 py-2 rounded-full text-lg font-semibold hover:bg-green-700 transition duration-300">Hubungi Kami di WhatsApp</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
                 <!-- Tentang Perusahaan -->
                 <div>
                     <h3 class="text-xl font-bold mb-4">Tentang Kami</h3>
-                    <p class="text-gray-400">Kami adalah perusahaan yang berdedikasi untuk memberikan solusi terbaik bagi bisnis Anda.</p>
+                    <p class="text-gray-400">Snack Fusion menyajikan camilan terbaik dengan rasa yang lezat dan kualitas terbaik.</p>
                 </div>
                 <!-- Link Cepat -->
                 <div>
@@ -191,39 +184,36 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">Kontak</h3>
                     <ul class="text-gray-400">
-                        <li>Email: info@perusahaan.com</li>
-                        <li>Telepon: +62 123 4567 890</li>
-                        <li>Alamat: Jl. Contoh No. 123, Kota, Indonesia</li>
+                        <li>Email: fusionsnack2@gmail.com</li>
+                        <li>Telepon: 0813-1459-2383</li>
+                        <li>Alamat: Jl. Bambu Hitam No.3, RT.3/RW.1, Bambu Apus, Kec. Cipayung, Kota Jakarta Timur</li>
                     </ul>
                 </div>
                 <!-- Sosial Media -->
                 <div>
                     <h3 class="text-xl font-bold mb-4">Sosial Media</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com/krispsossy" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://tiktok.com/@snack.fusion5" class="text-gray-400 hover:text-white"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://instagram.com/fusionsnack12" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                &copy; 2023 Nama Perusahaan. All rights reserved.
+                &copy; 2025 Snack Fusion. All rights reserved.
             </div>
         </div>
     </footer>
-    
 
-    <!-- AOS Script -->
+    <!-- AOS (Animate On Scroll) -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    
     <!-- Mobile Menu Script -->
     <script>
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
